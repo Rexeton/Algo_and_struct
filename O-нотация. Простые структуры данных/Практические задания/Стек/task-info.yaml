@@ -62,7 +62,7 @@ files:
       length: 40
       offset: 1253
     initialized_from_dependency: false
-    selected: false
+    selected: true
     status: Solved
     encrypted_possible_answer: return len(self._stack)
   text: |
