@@ -34,10 +34,7 @@ class Queue:
         if not self._queue:
             IndexError
         first_elem=self._queue[0]
-        if len(self._queue)==1:
-            self._queue = []
-        else:
-            self._queue=self._queue[1:]
+        self._queue.pop(0)
         return first_elem
 
     def peek(self, ind: int = 0) -> Any: #O(1)
@@ -60,10 +57,21 @@ class Queue:
     def clear(self) -> None: #O(1)
         """ Очистка очереди. """
         ...  # TODO реализовать метод clear
-        self._queue=[]
+        self._queue.clear()
 
     def __len__(self): #O(1)
         """ Количество элементов в очереди. """
         ...  # TODO реализовать метод __len__
         return self._queue.__len__()
 
+
+
+qu=Queue()
+qu.enqueue(1)
+qu.enqueue(2)
+qu.enqueue(3)
+print(qu._queue)
+qu.dequeue()
+print(qu._queue)
+qu.clear()
+print(qu._queue)
