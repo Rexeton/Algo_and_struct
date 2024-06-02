@@ -12,7 +12,7 @@ class PriorityQueue:
     LOW_PRIORITY = 10  # наименьший приоритет
 
     def __init__(self):
-        ...  # TODO использовать deque для реализации очереди с приоритетами
+        self._queue={i: deque() for i in range(self.HIGH_PRIORITY,self.LOW_PRIORITY+1)}  # TODO использовать deque для реализации очереди с приоритетами
 
     def enqueue(self, elem: Any, priority: int = 0) -> None:
         """
@@ -21,7 +21,7 @@ class PriorityQueue:
         :param elem: Элемент, который должен быть добавлен
         :param priority: Приоритет добавляемого элемента
         """
-        ...  # TODO реализовать метод enqueue
+        self._queue[priority].append(elem)  # TODO реализовать метод enqueue
 
     def dequeue(self) -> Any:
         """
@@ -32,6 +32,11 @@ class PriorityQueue:
         :return: Извлеченный с начала очереди элемент.
         """
         ...  # TODO реализовать метод dequeue
+        for queue in self._queue.values():
+            if queue:
+                return queue.popleft()
+
+        raise IndexError("Извлечение из пустой очереди не возможно")
 
     def peek(self, ind: int = 0, priority: int = 0) -> Any:
         """
@@ -47,10 +52,26 @@ class PriorityQueue:
         """
         ...  # TODO реализовать метод peek
 
+        if not isinstance(ind, int):
+            raise TypeError(f"Индекс должен быть целочисленного типа, а не {type(ind).__name__}")
+
+        queue = self._queue[priority]
+        if not 0 <= ind < len(queue):
+            raise IndexError("Индекс все границ очереди")
+
+        return queue[ind]
+
     def clear(self) -> None:
         """ Очистка очереди. """
         ...  # TODO реализовать метод clear
+        for queue in self._queue.values():
+            queue.clear()
 
     def __len__(self):
         """ Количество элементов в очереди. """
-        ...  # TODO реализовать метод __len__
+        len_ = 0
+        for queue in self._queue.values():
+            len_ += len(queue)
+
+        return len_
+
