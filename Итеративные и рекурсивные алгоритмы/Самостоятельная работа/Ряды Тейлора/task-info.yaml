@@ -11,8 +11,8 @@ files:
       length: 73
       offset: 285
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: |-
       def item(n):
               """ Подсчет очередного элемента бесконечного ряда Тейлора для sin(x)"""
@@ -69,5 +69,8 @@ files:
 - name: img.png
   visible: true
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Sun, 02 Jun 2024 18:28:14 UTC"
 record: -1

@@ -11,7 +11,7 @@ files:
       offset: 294
     initialized_from_dependency: false
     selected: false
-    status: Unchecked
+    status: Solved
     encrypted_possible_answer: '...'
   text: |
     """
@@ -66,5 +66,8 @@ files:
 - name: tests/__init__.py
   visible: false
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Sun, 02 Jun 2024 17:57:58 UTC"
 record: -1

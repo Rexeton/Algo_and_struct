@@ -4,15 +4,15 @@ files:
   visible: true
   placeholders:
   - offset: 381
-    length: 61
+    length: 106
     placeholder_text: "...  # TODO реализовать итеративный алгоритм бинарного поис\
       ка"
     initial_state:
       length: 61
       offset: 381
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: |-
       left_border = 0
           right_border = len(seq) - 1
@@ -128,5 +128,8 @@ files:
 - name: tests/__init__.py
   visible: false
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Sun, 02 Jun 2024 17:52:48 UTC"
 record: -1
