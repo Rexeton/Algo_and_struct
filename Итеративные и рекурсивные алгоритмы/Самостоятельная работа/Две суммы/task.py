@@ -7,8 +7,7 @@ def two_sum(nums: List[int], target: int) -> List[int]:
     for n in nums:
         if target-n in di:
             return [i,di[target-n]]
-        else:
-            di[n]=i
+        di[n]=i
         i = i + 1
 
 
