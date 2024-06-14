@@ -3,12 +3,12 @@ files:
 - name: task.py
   visible: true
   placeholders:
-  - offset: 834
+  - offset: 1807
     length: 0
     placeholder_text: '...'
     initial_state:
-      length: 3
-      offset: 81
+      length: 0
+      offset: 1807
     initialized_from_dependency: false
     selected: true
     status: Solved
@@ -77,5 +77,5 @@ files:
 status: Solved
 feedback:
   message: Congratulations!
-  time: "Tue, 04 Jun 2024 06:40:16 UTC"
+  time: "Fri, 14 Jun 2024 20:26:26 UTC"
 record: -1

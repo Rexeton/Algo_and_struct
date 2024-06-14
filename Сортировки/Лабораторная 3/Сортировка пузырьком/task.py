@@ -14,3 +14,14 @@ def sort(container: Sequence[int]) -> Sequence[int]:
     :return: Отсортированный в порядке возрастания массив
     """
     ...  # TODO реализовать алгоритм сортировки пузырьком
+
+    flag_of_iter=True
+    ite=0
+    while flag_of_iter:
+        flag_of_iter=False
+        for i in range(1,len(container)-ite):
+            if container[i]<container[i-1]:
+                flag_of_iter=True
+                container[i] , container[i - 1]=container[i-1] , container[i]
+        ite+=1
+    return container

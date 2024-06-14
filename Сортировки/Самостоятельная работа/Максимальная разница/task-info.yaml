@@ -3,15 +3,15 @@ files:
 - name: task.py
   visible: true
   placeholders:
-  - offset: 71
-    length: 3
+  - offset: 67
+    length: 146
     placeholder_text: '...'
     initial_state:
       length: 3
       offset: 71
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: |-
       '''
           Временная сложность:
@@ -88,5 +88,8 @@ files:
 - name: img.png
   visible: true
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Fri, 14 Jun 2024 22:14:00 UTC"
 record: -1
