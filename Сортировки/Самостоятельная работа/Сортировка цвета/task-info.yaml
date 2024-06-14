@@ -3,15 +3,15 @@ files:
 - name: task.py
   visible: true
   placeholders:
-  - offset: 148
-    length: 105
+  - offset: 237
+    length: 25
     placeholder_text: '...'
     initial_state:
       length: 3
       offset: 152
     initialized_from_dependency: false
     selected: true
-    status: Failed
+    status: Solved
     encrypted_possible_answer: |-
       low, mid, high = 0, 0, len(nums) - 1
           while mid <= high:
@@ -62,10 +62,8 @@ files:
 - name: tests/__init__.py
   visible: false
   learner_created: false
-status: Failed
+status: Solved
 feedback:
-  message: "Lists differ: [2, 0, 2, 1, 1, 0] != [0, 0, 1, 1, 2, 2]"
-  time: "Sun, 02 Jun 2024 21:42:45 UTC"
-  expected: "[2, 0, 2, 1, 1, 0]"
-  actual: "[0, 0, 1, 1, 2, 2]"
+  message: Congratulations!
+  time: "Fri, 14 Jun 2024 18:25:29 UTC"
 record: -1
