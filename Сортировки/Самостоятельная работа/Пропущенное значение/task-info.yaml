@@ -4,13 +4,13 @@ files:
   visible: true
   placeholders:
   - offset: 74
-    length: 143
+    length: 3
     placeholder_text: '...'
     initial_state:
       length: 3
       offset: 74
     initialized_from_dependency: false
-    selected: true
+    selected: false
     status: Solved
     encrypted_possible_answer: |-
       n = len(nums)
@@ -53,5 +53,5 @@ files:
 status: Solved
 feedback:
   message: Congratulations!
-  time: "Sun, 02 Jun 2024 19:29:49 UTC"
+  time: "Fri, 07 Jun 2024 11:22:35 UTC"
 record: -1

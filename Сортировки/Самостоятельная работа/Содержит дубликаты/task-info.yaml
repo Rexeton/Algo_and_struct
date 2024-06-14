@@ -4,7 +4,7 @@ files:
   visible: true
   placeholders:
   - offset: 79
-    length: 36
+    length: 3
     placeholder_text: '...'
     initial_state:
       length: 3
@@ -57,5 +57,5 @@ files:
 status: Solved
 feedback:
   message: Congratulations!
-  time: "Sun, 02 Jun 2024 19:08:45 UTC"
+  time: "Fri, 07 Jun 2024 11:22:20 UTC"
 record: -1

@@ -4,14 +4,14 @@ files:
   visible: true
   placeholders:
   - offset: 381
-    length: 106
+    length: 61
     placeholder_text: "...  # TODO реализовать итеративный алгоритм бинарного поис\
       ка"
     initial_state:
       length: 61
       offset: 381
     initialized_from_dependency: false
-    selected: true
+    selected: false
     status: Solved
     encrypted_possible_answer: |-
       left_border = 0
@@ -131,5 +131,5 @@ files:
 status: Solved
 feedback:
   message: Congratulations!
-  time: "Sun, 02 Jun 2024 17:52:48 UTC"
+  time: "Fri, 07 Jun 2024 11:21:35 UTC"
 record: -1

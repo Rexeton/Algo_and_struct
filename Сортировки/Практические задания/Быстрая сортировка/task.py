@@ -13,3 +13,18 @@ def sort(container: List[int]) -> List[int]:
     :return: Отсортированная в порядке возрастания последовательность
     """
     ...  # TODO реализовать алгоритм быстрой сортировки
+    if len(container)<=1:
+        return container
+    midle=container[len(container)//2]
+    left_conteiner=[]
+    right_conteiner=[]
+    eqval_container=[]
+    for el in container:
+        if el>midle:
+            right_conteiner.append(el)
+        elif el<midle:
+            left_conteiner.append(el)
+        else:
+            eqval_container.append(el)
+    return sort(left_conteiner)+eqval_container+sort(right_conteiner)
+
