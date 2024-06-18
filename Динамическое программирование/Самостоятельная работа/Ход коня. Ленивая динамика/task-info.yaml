@@ -10,8 +10,8 @@ files:
       length: 40
       offset: 342
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: |-
       rows, cols = shape  # кол-во строк и столбцов отсчет с 1
 
@@ -85,5 +85,8 @@ files:
 - name: img.png
   visible: true
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Tue, 18 Jun 2024 17:59:13 UTC"
 record: -1

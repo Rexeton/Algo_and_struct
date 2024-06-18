@@ -3,8 +3,8 @@ files:
 - name: task.py
   visible: true
   placeholders:
-  - offset: 148
-    length: 0
+  - offset: 908
+    length: 25
     placeholder_text: '...'
     initial_state:
       length: 3
