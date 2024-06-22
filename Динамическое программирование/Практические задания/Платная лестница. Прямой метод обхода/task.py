@@ -10,16 +10,20 @@ def stairway_path(stairway: Sequence[Union[float, int]]) -> Union[float, int]:
     :return: минимальная стоимость подъема на верхнюю ступень
     """
     ...  # TODO реализовать прямой метод расчета
-    res=0
-    if len(stairway)==1:
+    count_stairs = len(stairway)
+    if count_stairs == 1:
         return stairway[0]
-    if len(stairway)==2:
-        return stairway[2]
+    if count_stairs == 2:
+        return stairway[1]
 
-    for i in range(len(stairway)//2):
-        res+=min(stairway[i+1],stairway[i+2])
+    coast = [0] * count_stairs
+    coast[0] = stairway[0]
+    coast[1] = stairway[1]
 
-    return res
+    for current_step in range(2, len(stairway)):
+        coast[current_step] = stairway[current_step] + min(coast[current_step - 1], coast[current_step - 2])
+        print(coast[current_step] )
+    return coast[-1]
 
 if __name__ == '__main__':
     print(stairway_path((1, 3, 1, 5, 2, 7, 7, 8, 9, 4, 6, 3))) # 7

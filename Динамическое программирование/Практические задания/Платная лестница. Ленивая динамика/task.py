@@ -11,7 +11,15 @@ def stairway_path(stairway: Sequence[Union[float, int]]) -> Union[float, int]:
     :return: минимальная стоимость подъема на верхнюю ступень
     """
     ...  # TODO реализовать ленивую динамику
+    @lru_cache
+    def lazy_method(stairway, n):
+        if n == 0 or n == 1:
+            return stairway[n]
 
+        return stairway[n] + min(lazy_method(stairway, n - 1),
+                                 lazy_method(stairway, n - 2))
+
+    return lazy_method(stairway, len(stairway)-1)
 
 if __name__ == '__main__':
     print(stairway_path((1, 3, 1, 5)))  # 7

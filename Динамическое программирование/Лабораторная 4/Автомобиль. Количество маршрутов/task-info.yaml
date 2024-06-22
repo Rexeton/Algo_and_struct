@@ -11,8 +11,8 @@ files:
       length: 66
       offset: 347
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: '...'
   text: |
     from typing import List
@@ -62,5 +62,8 @@ files:
 - name: tests/__init__.py
   visible: false
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Fri, 21 Jun 2024 21:02:04 UTC"
 record: -1

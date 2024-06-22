@@ -11,7 +11,7 @@ files:
       offset: 355
     initialized_from_dependency: false
     selected: false
-    status: Failed
+    status: Solved
     encrypted_possible_answer: |-
       table = table.copy()
           n = len(table)
@@ -80,11 +80,8 @@ files:
 - name: img.png
   visible: true
   learner_created: false
-status: Failed
+status: Solved
 feedback:
-  message: "Lists differ: [[19, 13, 4, 9], [5, 6, 11, 5], [5, 2, 5, 21]] != [[2, 9,\
-    \ 18, 21], [14, 13, 14, 23], [15, 18, 16, 21]]"
-  time: "Fri, 21 Jun 2024 17:15:23 UTC"
-  expected: "[[19, 13, 4, 9], [5, 6, 11, 5], [5, 2, 5, 21]]"
-  actual: "[[2, 9, 18, 21], [14, 13, 14, 23], [15, 18, 16, 21]]"
+  message: Congratulations!
+  time: "Fri, 21 Jun 2024 21:51:22 UTC"
 record: -1
