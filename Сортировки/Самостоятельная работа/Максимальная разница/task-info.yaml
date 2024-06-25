@@ -11,7 +11,7 @@ files:
       offset: 71
     initialized_from_dependency: false
     selected: false
-    status: Unchecked
+    status: Solved
     encrypted_possible_answer: |-
       '''
           Временная сложность:
@@ -88,5 +88,8 @@ files:
 - name: img.png
   visible: true
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Tue, 25 Jun 2024 20:49:45 UTC"
 record: -1

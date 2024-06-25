@@ -11,7 +11,7 @@ files:
       offset: 486
     initialized_from_dependency: false
     selected: false
-    status: Unchecked
+    status: Solved
     encrypted_possible_answer: '...'
   text: |
     from typing import Sequence
@@ -70,5 +70,8 @@ files:
 - name: counting_sort.gif
   visible: true
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Tue, 25 Jun 2024 20:49:38 UTC"
 record: -1
