@@ -10,8 +10,8 @@ files:
       length: 3
       offset: 81
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: |-
       if not strs:
               return ""
@@ -54,5 +54,8 @@ files:
 - name: tests/__init__.py
   visible: false
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Fri, 28 Jun 2024 21:02:27 UTC"
 record: -1

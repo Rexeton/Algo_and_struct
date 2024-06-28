@@ -3,7 +3,7 @@ files:
 - name: task.py
   visible: true
   placeholders:
-  - offset: 292
+  - offset: 283
     length: 34
     placeholder_text: '# TODO реализовать поиск в глубину'
     initial_state:
